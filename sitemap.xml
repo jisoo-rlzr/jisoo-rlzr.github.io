@@ -3,15 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://okthisisgood.github.io/categories/</loc>
+    <loc>https://okthisisgood.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>http://okthisisgood.github.io/tags/</loc>
+    <loc>https://okthisisgood.github.io/tags/</loc>
   </url>
   
   <url>
-    <loc>http://okthisisgood.github.io/</loc>
+    <loc>https://okthisisgood.github.io/</loc>
   </url>
   
 </urlset>
