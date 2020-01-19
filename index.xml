@@ -7,9 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://okthisisgood.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://okthisisgood.github.io/about/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://okthisisgood.github.io/about/</guid>
+      <description>Hi, I&#39;m Jisoo Kim.
+I’m currently a frontend mobile &amp;amp; web developer based in Seoul, Korea. I enjoy learning and improving skills to make interesting and valuable services.
+My main skillset is
+ Android &amp;amp; Kotlin Unity 3D &amp;amp; AR Foundation Firebase HTML, CSS, JavaScript  And currently studying &amp;amp; working on projects with
+ IOS &amp;amp; Swift Vue.js  I also have done personal projects with
+ Node.js GraphQL &amp;amp; Prisma AWS Lambda &amp;amp; Fargate deployment Bootstrap  You can also check my company here.</description>
+    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,22 @@
+.main-profile {
+  border: none;
+}
+.main-profile .main-profile__avatar {
+  background-color: white;
+  right: 0;
+}
+.main-profile .main-profile__body {
+  display: flex;
+  padding: 2.5vmin 16vmin 2.5vmin 5vmin;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  text-align: right;
+}
+.main-profile .main-profile__description {
+  line-height: 1;
+  margin: .5vh 0;
+}
+.main-profile .main-profile__body .main-profile__email {
+  font-size: .7rem;
+}
