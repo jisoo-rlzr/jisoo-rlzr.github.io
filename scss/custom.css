@@ -5,6 +5,21 @@
 .u-font {
   font-family: 'Satisfy', cursive;
 }
+/*
+ * Color config
+ */
+a {
+  color: #547A9A;
+}
+ blockquote p {
+  border-left: #547A9A 3px solid;
+}
+.index-line span {
+  border-top: #547A9A 3px solid;
+}
+.main-content h1::before, .main-content h2::before, .main-content h3::before, .main-content h4::before, .main-content h5::before, .main-content h6::before {
+  color: #547A9A;
+}
 
 .site-nav .site-nav__el {
   font-size: .9rem;
