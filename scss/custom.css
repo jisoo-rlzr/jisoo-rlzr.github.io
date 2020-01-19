@@ -40,6 +40,11 @@ a {
   line-height: 1;
   text-align: right;
 }
+@media screen and (max-width: 800px) {
+  .main-profile .main-profile__body {
+    padding: 2.5vmin 26vmin 2.5vmin 3vmin; 
+  } 
+}
 .main-profile .main-profile__description {
   line-height: 1;
   margin: .5vh 0;
