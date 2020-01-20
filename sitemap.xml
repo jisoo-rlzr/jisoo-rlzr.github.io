@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://okthisisgood.github.io/about/</loc>
-    <lastmod>2020-01-19T20:33:29+09:00</lastmod>
+    <loc>https://okthisisgood.github.io/post/wrap-up-2019/</loc>
+    <lastmod>2020-01-19T23:55:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okthisisgood.github.io/post/</loc>
+    <lastmod>2020-01-19T23:55:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://okthisisgood.github.io/</loc>
+    <lastmod>2020-01-19T23:55:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okthisisgood.github.io/about/</loc>
     <lastmod>2020-01-19T20:33:29+09:00</lastmod>
   </url>
   

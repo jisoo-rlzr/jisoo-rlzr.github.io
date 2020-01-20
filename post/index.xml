@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech Blog</title>
-    <link>https://okthisisgood.github.io/</link>
-    <description>Recent content on Tech Blog</description>
+    <title>Posts on Tech Blog</title>
+    <link>https://okthisisgood.github.io/post/</link>
+    <description>Recent content in Posts on Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 23:55:48 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okthisisgood.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,20 +26,6 @@ GooglePlay와 AppStore에 모두 출시했다.
 우선 Output이 있었던 점은 만족하지만 마케팅과 정확한 고객 타게팅과 가치 설정에 있어서는 미흡했다.
 각 앱에 대한 부가 설명은 아래에 적었다.  꼭꼭 숨어라
 꼭꼭 숨어라는 처음부터 끝까지 내 손으로 만들어 출시한 첫 앱이다.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://okthisisgood.github.io/about/</link>
-      <pubDate>Sun, 19 Jan 2020 20:33:29 +0900</pubDate>
-      
-      <guid>https://okthisisgood.github.io/about/</guid>
-      <description>Hi, I&#39;m Jisoo Kim.
-I’m currently a frontend mobile &amp;amp; web developer based in Seoul, Korea. I enjoy learning and improving skills to make interesting and valuable services.
-My main skillset is
- Android &amp;amp; Kotlin Unity 3D &amp;amp; AR Foundation Firebase HTML, CSS, JavaScript  And currently studying &amp;amp; working on projects with
- IOS &amp;amp; Swift Vue.js  I also have done personal projects with
- Node.js GraphQL &amp;amp; Prisma AWS Lambda &amp;amp; Fargate deployment Bootstrap  You can also check my company here.</description>
     </item>
     
   </channel>
