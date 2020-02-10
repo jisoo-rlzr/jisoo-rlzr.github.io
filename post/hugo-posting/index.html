@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        
+        Tech Blog
+        
+    </title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href="https://okthisisgood.github.io/images/logo.png" />
+    <link rel="apple-touch-icon" href="https://okthisisgood.github.io/images/logo.png"><link rel="stylesheet" href="https://okthisisgood.github.io/scss/style.css">
+    
+    <link rel="stylesheet" href="https://okthisisgood.github.io/scss/monokai-sublime.min.css">
+    <script src="https://okthisisgood.github.io/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://okthisisgood.github.io/scss/highlight.css">
+    
+    <link rel="stylesheet" href="https://okthisisgood.github.io/scss/custom.css">
+    
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'Your Google Analytics tracking id', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    
+    <meta name="generator" content="Hugo 0.62.2" /></head>
+
+
+<body>
+<div class="header">
+    <div class="site-logo__wrap">
+        <div id="site-button">
+            <div></div>
+        </div>
+        
+        <div class=' site-logo '>
+            <a href="https://okthisisgood.github.io/"><img src="https://okthisisgood.github.io/images/logo.png" /></a>
+        </div>
+    </div>
+    
+<div class=' site-nav u-font ' id="nav-bar">
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/" >Home</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/post" >Blog</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/about" >About</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/tags/" >Tags</a>
+    </div>
+    
+</div>
+
+</div>
+<div class="main">
+
+<div class="main-content">
+    <div class="main-content__date">
+        <h4 id="date"> 2020.02.10 23:49 </h4>
+    </div>
+    <div class="main-content__title">
+        <h1 id="title">GitHub 휴고 블로그에 새 글 배포하기</h1>
+    </div>
+    <div class="main-content__article">
+        <article id="content">
+            <p>업로드 할 때마다 찾아보지 않도록 휴고 블로그에 새로운 포스트를 업로드 하는 과정을 정리해 보겠다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="1-새-포스트-생성하기br">1. 새 포스트 생성하기<!-- raw HTML omitted --></h1>
+<p>포스트는 주로 <strong>content/post</strong> 디렉토리에 있다.<br>
+프로젝트 루트에서 다음 명령어를 실행하면 새로운 md 파일이 생성된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new post/new-post-title.md
+</code></pre></div><p>생성된 파일에는 Date가 자동으로 입력되고,<br>
+<code>draft: true</code> 라는 라인이 포함되어 있다. 이는 작성 중이라는 뜻으로, 빌드에 포함되지 않는다.<br>
+작성이 완료되면 값을 <code>false</code>로 바꿔 빌드에 포함될 수 있도록 한다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="2-로컬-서버에서-확인하기">2. 로컬 서버에서 확인하기</h1>
+<p>새 포스트를 배포하기 전에 로컬 서버를 돌려 확인할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server -D
+</code></pre></div><p><code>-D</code> 옵션을 통해 draft 문서도 빌드에 포함해 확인할 수 있다.<br>
+또한 변경 사항을 저장하면 서버를 다시 돌리지 않아도 바로 적용되어 확인할 수 있다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="3-배포하기">3. 배포하기</h1>
+<p>이 블로그는 URL에서 알 수 있듯 GitHub Pages로 배포되어 있다.</p>
+<blockquote>
+<p>처음 사이트를 배포하는 과정은 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#step-by-step-instructions">이 페이지</a>와 2번 레퍼런스를 참고했고, 요약하면 다음과 같다.</p>
+<ol>
+<li>GitHub에 전체 블로그 프로젝트를 위한 &lt;프로젝트명&gt; Repository를 만든다.</li>
+<li>렌더링 된 휴고 사이트가 포함될 &lt;깃헙 유저명&gt;.github.io 라는 이름의 Repository를 만든다.<br>
+여기서 중요! GitHub Pages는 <strong>public</strong> Repository만 호스팅 되므로 public으로 설정.</li>
+<li>hugo 사이트 빌드 결과가 담길 public 디렉토리를 git submodule로 지정한다.</li>
+<li>배포 시에는 빌드를 한 뒤 public 디렉토리를 push하고, 전체 프로젝트를 push한다.</li>
+</ol>
+</blockquote>
+<p>새 글을 배포할 때에는 4번 과정을 실행하면 된다.</p>
+<p>우선 현재 적용된 테마를 이용해 <strong>프로젝트를 빌드</strong>한다.<br>
+테마 이름은 <strong>config.toml</strong> 파일 내 <code>theme = &quot;테마 이름&quot;</code>에 입력한 값과 동일하게 입력한다.<br>
+빌드 전에 새로 작성한 글을 <code>draft: false</code> 라고 설정해 주는 것도 기억하자.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo -t &lt;테마 이름&gt;
+</code></pre></div><p>그럼 <strong>public</strong> 디렉토리에 결과물이 저장되며, 이 <strong>submodule을 commit 후 push</strong>,<br>
+그 다음 <strong>전체 프로젝트를 commit 후 push</strong> 하면 된다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="references">References</h1>
+<ol>
+<li><a href="https://themes.gohugo.io/hugo-theme-yuki/">https://themes.gohugo.io/hugo-theme-yuki/</a></li>
+<li><a href="https://ialy1595.github.io/post/blog-construct-1/#6-%EB%B9%8C%EB%93%9C-%EB%B0%8F-git-push">https://ialy1595.github.io/post/blog-construct-1/#6-%EB%B9%8C%EB%93%9C-%EB%B0%8F-git-push</a>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></li>
+</ol>
+
+        </article>
+    </div>
+    <div class="main-content__tags u-font">
+        
+        
+        <span><a href="https://okthisisgood.github.io/tags/hugo">Hugo</a></span>
+        
+        <span><a href="https://okthisisgood.github.io/tags/github-pages">GitHub Pages</a></span>
+        
+        
+    </div>
+</div>
+<div class="main-profile">
+    
+    <div class="main-profile__body">
+        <div class="main-profile__author">
+            
+            <span> Jisoo </span>
+            
+        </div>
+        <div class="main-profile__email main-profile__description">
+            
+            <p> a.jisookim@gmail.com </p>
+            
+        </div>
+        <div class="main-profile__description">
+            
+            <p> Mobile &amp; Web Developer, a Realizer </p>
+            
+        </div>
+    </div>
+    <div class="main-profile__avatar">
+        
+            <img src="https://okthisisgood.github.io/images/logo.png">
+        
+    </div>
+</div>
+<div class="main-line"></div>
+<div class="main-pn">
+    
+    <a class="previous" href="https://okthisisgood.github.io/post/wrap-up-2019/">
+        <div class="pn-dec"></div>
+        <div class="pn-els">
+            <div class="pn-el__1"> 2020.01.19 23:55 </div>
+            <div class="pn-el__2"> 2019년에 대한 회고 </div>
+        </div>
+    </a>
+    
+    
+</div>
+
+</div>
+<div class="footer">
+    <div class="copyright-wrap">
+        <p class="copyright u-font">
+            2020 Jisoo Kim. All rights reserved.
+        </p>
+    </div>
+</div>
+</body>
+<script src="https://okthisisgood.github.io/js/page.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+

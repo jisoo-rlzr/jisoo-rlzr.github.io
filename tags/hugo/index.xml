@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Tech Blog</title>
-    <link>https://okthisisgood.github.io/post/</link>
-    <description>Recent content in Posts on Tech Blog</description>
+    <title>Hugo on Tech Blog</title>
+    <link>https://okthisisgood.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
     <lastBuildDate>Mon, 10 Feb 2020 23:49:01 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://okthisisgood.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,22 +25,6 @@ $ hugo new post/new-post-title.md 생성된 파일에는 Date가 자동으로 �
 draft: true 라는 라인이 포함되어 있다. 이는 작성 중이라는 뜻으로, 빌드에 포함되지 않는다.
 작성이 완료되면 값을 false로 바꿔 빌드에 포함될 수 있도록 한다.
 2. 로컬 서버에서 확인하기 새 포스트를 배포하기 전에 로컬 서버를 돌려 확인할 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>2019년에 대한 회고</title>
-      <link>https://okthisisgood.github.io/post/wrap-up-2019/</link>
-      <pubDate>Sun, 19 Jan 2020 23:55:48 +0900</pubDate>
-      
-      <guid>https://okthisisgood.github.io/post/wrap-up-2019/</guid>
-      <description>생각만 하던 기술 블로그를 드디어 시작하게 되었다.
-첫 포스트는 모처럼 연초에 블로그를 시작한 김에 2019년에 대한 회고를 해보기로 한다.
-우선 1월에 하나, 9월과 12월에 하나씩 총 세 번 앱을 출시했다.
-1월 출시한 앱은 내렸고 이후 출시한 앱들 HeyZoo 시리즈는 관리 중이다.
-GooglePlay와 AppStore에 모두 출시했다.
-우선 Output이 있었던 점은 만족하지만 마케팅과 정확한 고객 타게팅과 가치 설정에 있어서는 미흡했다.
-각 앱에 대한 부가 설명은 아래에 적었다.  꼭꼭 숨어라
-꼭꼭 숨어라는 처음부터 끝까지 내 손으로 만들어 출시한 첫 앱이다.</description>
     </item>
     
   </channel>
