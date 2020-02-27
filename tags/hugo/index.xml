@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Jisoo&#39;s Dev Log</title>
-    <link>https://okthisisgood.github.io/tags/hugo/</link>
+    <link>https://jisoo-rlzr.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Jisoo&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
     <lastBuildDate>Mon, 10 Feb 2020 23:49:01 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jisoo-rlzr.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GitHub 휴고 블로그에 새 글 배포하기</title>
-      <link>https://okthisisgood.github.io/post/hugo-posting/</link>
+      <link>https://jisoo-rlzr.github.io/post/hugo-posting/</link>
       <pubDate>Mon, 10 Feb 2020 23:49:01 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/hugo-posting/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/hugo-posting/</guid>
       <description>업로드 할 때마다 찾아보지 않도록 휴고 블로그에 새로운 포스트를 업로드 하는 과정을 정리해 보겠다.
 1. 새 포스트 생성하기 포스트는 주로 content/post 디렉토리에 있다.
 프로젝트 루트에서 다음 명령어를 실행하면 새로운 md 파일이 생성된다.

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jisoo&#39;s Dev Log</title>
-    <link>https://okthisisgood.github.io/post/</link>
+    <link>https://jisoo-rlzr.github.io/post/</link>
     <description>Recent content in Posts on Jisoo&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
     <lastBuildDate>Mon, 17 Feb 2020 16:23:35 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jisoo-rlzr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iOS UserDefaults를 이용한 Preference 데이터 저장</title>
-      <link>https://okthisisgood.github.io/post/ios-userdefaults/</link>
+      <link>https://jisoo-rlzr.github.io/post/ios-userdefaults/</link>
       <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/ios-userdefaults/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/ios-userdefaults/</guid>
       <description>UserDefaults 클래스는 Key-Value 데이터로 사용자 설정 데이터를 저장하는 defaults 데이터베이스와 인터랙팅하는 인터페이스다.
 defaults 시스템은 사용자의 프리퍼런스에 따라 앱을 커스터마이징 할 수 있도록 해준다.
 안드로이드의 SharedPreference, Unity의 PlayerPrefs 등과 같은 개념이다.
@@ -27,10 +27,10 @@ UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정�
     
     <item>
       <title>MacOS에서 adb(Android Debug Bridge) 사용 설정하기</title>
-      <link>https://okthisisgood.github.io/post/adb-setting/</link>
+      <link>https://jisoo-rlzr.github.io/post/adb-setting/</link>
       <pubDate>Tue, 11 Feb 2020 12:31:43 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/adb-setting/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/adb-setting/</guid>
       <description>안드로이드 개발을 한다면 필수적으로 사용하는 adb를 사용 설정하는 법을 정리하겠다.
 0. 사전 준비 Android Studio 설치 및 환경 설정이 완료된 상태로 가정한다.
 1. adb 설치하기 adb는 Android SDK Manager Platform-Tools 패키지에 포함되어 있다.
@@ -41,10 +41,10 @@ UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정�
     
     <item>
       <title>GitHub 휴고 블로그에 새 글 배포하기</title>
-      <link>https://okthisisgood.github.io/post/hugo-posting/</link>
+      <link>https://jisoo-rlzr.github.io/post/hugo-posting/</link>
       <pubDate>Mon, 10 Feb 2020 23:49:01 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/hugo-posting/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/hugo-posting/</guid>
       <description>업로드 할 때마다 찾아보지 않도록 휴고 블로그에 새로운 포스트를 업로드 하는 과정을 정리해 보겠다.
 1. 새 포스트 생성하기 포스트는 주로 content/post 디렉토리에 있다.
 프로젝트 루트에서 다음 명령어를 실행하면 새로운 md 파일이 생성된다.
