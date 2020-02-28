@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 17 Feb 2020 16:23:35 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 11:24:50 +0900</lastBuildDate>
     
 	<atom:link href="https://jisoo-rlzr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iOS</title>
+      <link>https://jisoo-rlzr.github.io/tags/ios/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RequestReview</title>
+      <link>https://jisoo-rlzr.github.io/tags/requestreview/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/requestreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StoreKit</title>
+      <link>https://jisoo-rlzr.github.io/tags/storekit/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/storekit/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Database</title>
@@ -18,15 +45,6 @@
       <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
       
       <guid>https://jisoo-rlzr.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iOS</title>
-      <link>https://jisoo-rlzr.github.io/tags/ios/</link>
-      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
-      
-      <guid>https://jisoo-rlzr.github.io/tags/ios/</guid>
       <description></description>
     </item>
     

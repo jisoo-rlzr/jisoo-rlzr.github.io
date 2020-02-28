@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iOS on Jisoo&#39;s Dev Log</title>
-    <link>https://jisoo-rlzr.github.io/tags/ios/</link>
-    <description>Recent content in iOS on Jisoo&#39;s Dev Log</description>
+    <title>StoreKit on Jisoo&#39;s Dev Log</title>
+    <link>https://jisoo-rlzr.github.io/tags/storekit/</link>
+    <description>Recent content in StoreKit on Jisoo&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
     <lastBuildDate>Fri, 28 Feb 2020 11:24:50 +0900</lastBuildDate>
     
-	<atom:link href="https://jisoo-rlzr.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jisoo-rlzr.github.io/tags/storekit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,19 +25,6 @@ SKStoreReviewController API(iOS 10.3+)를 사용하면 사용자는 앱을 종�
 유의할 것은, 프롬프트가 1년에 최대 3번까지만 표시된다.
 그러므로 다음 권고사항을 지켜서 최적의 시점에 요청하도록 해야겠다.
  같은 버전의 앱에 대한 리뷰를 요청하지 않도록 번들 버전을 확인한다.</description>
-    </item>
-    
-    <item>
-      <title>iOS UserDefaults를 이용한 Preference 데이터 저장</title>
-      <link>https://jisoo-rlzr.github.io/post/ios-userdefaults/</link>
-      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
-      
-      <guid>https://jisoo-rlzr.github.io/post/ios-userdefaults/</guid>
-      <description>UserDefaults 클래스는 Key-Value 데이터로 사용자 설정 데이터를 저장하는 defaults 데이터베이스와 인터랙팅하는 인터페이스다.
-defaults 시스템은 사용자의 프리퍼런스에 따라 앱을 커스터마이징 할 수 있도록 해준다.
-안드로이드의 SharedPreference, Unity의 PlayerPrefs 등과 같은 개념이다.
-UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정보를 캐싱한다.
-사용법  기본 객체 가져오기  UserDefaults.standard 데이터 저장하기  UserDefaults.standard.set(Any?, forKey: String) UserDefaults.standard.set(Float, forKey: String) UserDefaults.standard.set(Double, forKey: String) UserDefaults.standard.set(URL?, forKey: String) // and more  기본적으로 float, double, integer, Boolean, URL 타입을 지원하며,</description>
     </item>
     
   </channel>
