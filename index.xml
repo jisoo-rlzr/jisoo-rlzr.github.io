@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 28 Feb 2020 11:24:50 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 17:00:24 +0900</lastBuildDate>
     
 	<atom:link href="https://jisoo-rlzr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1일 1개선 개인정보처리방침</title>
+      <link>https://jisoo-rlzr.github.io/privacy/onechangeaday/</link>
+      <pubDate>Mon, 30 Mar 2020 17:00:24 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/privacy/onechangeaday/</guid>
+      <description>개인정보의 처리 목적  &amp;lt;수코드&amp;gt;(‘https://jisoo-rlzr.github.io/’이하 ‘1일 1개선’) 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
+ 로그인을 통한 고객 별 데이터 동기화
+  개인정보의 처리 및 보유 기간  ① &amp;lt;수코드&amp;gt;(‘https://jisoo-rlzr.github.io/’이하 ‘1일 1개선’) 은(는) 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유․이용기간 또는 법령에 따른 개인정보 보유․이용기간 내에서 개인정보를 처리․보유합니다.
+② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.
+ 개선사항 데이터 : 마지막 신규 저장 후 5년 또는 별도 공지 시까지</description>
+    </item>
     
     <item>
       <title>iOS에서 StoreKit 이용해 리뷰 요청하기</title>
