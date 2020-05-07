@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 28 Feb 2020 11:24:50 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:32:16 +0900</lastBuildDate>
     
 	<atom:link href="https://jisoo-rlzr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create React App</title>
+      <link>https://jisoo-rlzr.github.io/tags/create-react-app/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/create-react-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploy</title>
+      <link>https://jisoo-rlzr.github.io/tags/deploy/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://jisoo-rlzr.github.io/tags/heroku/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://jisoo-rlzr.github.io/tags/react/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/react/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>iOS</title>
