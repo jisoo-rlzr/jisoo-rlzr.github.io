@@ -1,59 +1,140 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tech Blog</title>
-    <link>https://okthisisgood.github.io/tags/</link>
-    <description>Recent content in Tags on Tech Blog</description>
+    <title>Tags on Jisoo&#39;s Dev Log</title>
+    <link>https://jisoo-rlzr.github.io/tags/</link>
+    <description>Recent content in Tags on Jisoo&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 12:31:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:32:16 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jisoo-rlzr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Create React App</title>
+      <link>https://jisoo-rlzr.github.io/tags/create-react-app/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/create-react-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploy</title>
+      <link>https://jisoo-rlzr.github.io/tags/deploy/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/deploy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://jisoo-rlzr.github.io/tags/heroku/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://jisoo-rlzr.github.io/tags/react/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://jisoo-rlzr.github.io/tags/ios/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RequestReview</title>
+      <link>https://jisoo-rlzr.github.io/tags/requestreview/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/requestreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StoreKit</title>
+      <link>https://jisoo-rlzr.github.io/tags/storekit/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/storekit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>https://jisoo-rlzr.github.io/tags/database/</link>
+      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UserDefaults</title>
+      <link>https://jisoo-rlzr.github.io/tags/userdefaults/</link>
+      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/tags/userdefaults/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>adb</title>
-      <link>https://okthisisgood.github.io/tags/adb/</link>
+      <link>https://jisoo-rlzr.github.io/tags/adb/</link>
       <pubDate>Tue, 11 Feb 2020 12:31:43 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/tags/adb/</guid>
+      <guid>https://jisoo-rlzr.github.io/tags/adb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>https://okthisisgood.github.io/tags/android/</link>
+      <link>https://jisoo-rlzr.github.io/tags/android/</link>
       <pubDate>Tue, 11 Feb 2020 12:31:43 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/tags/android/</guid>
+      <guid>https://jisoo-rlzr.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android Studio</title>
-      <link>https://okthisisgood.github.io/tags/android-studio/</link>
+      <link>https://jisoo-rlzr.github.io/tags/android-studio/</link>
       <pubDate>Tue, 11 Feb 2020 12:31:43 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/tags/android-studio/</guid>
+      <guid>https://jisoo-rlzr.github.io/tags/android-studio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub Pages</title>
-      <link>https://okthisisgood.github.io/tags/github-pages/</link>
+      <link>https://jisoo-rlzr.github.io/tags/github-pages/</link>
       <pubDate>Mon, 10 Feb 2020 23:49:01 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/tags/github-pages/</guid>
+      <guid>https://jisoo-rlzr.github.io/tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://okthisisgood.github.io/tags/hugo/</link>
+      <link>https://jisoo-rlzr.github.io/tags/hugo/</link>
       <pubDate>Mon, 10 Feb 2020 23:49:01 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/tags/hugo/</guid>
+      <guid>https://jisoo-rlzr.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

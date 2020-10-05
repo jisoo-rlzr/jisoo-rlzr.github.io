@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UserDefaults on Jisoo&#39;s Dev Log</title>
+    <link>https://jisoo-rlzr.github.io/tags/userdefaults/</link>
+    <description>Recent content in UserDefaults on Jisoo&#39;s Dev Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 17 Feb 2020 16:23:35 +0900</lastBuildDate>
+    
+	<atom:link href="https://jisoo-rlzr.github.io/tags/userdefaults/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iOS UserDefaults를 이용한 Preference 데이터 저장</title>
+      <link>https://jisoo-rlzr.github.io/post/ios-userdefaults/</link>
+      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/post/ios-userdefaults/</guid>
+      <description>UserDefaults 클래스는 Key-Value 데이터로 사용자 설정 데이터를 저장하는 defaults 데이터베이스와 인터랙팅하는 인터페이스다.
+defaults 시스템은 사용자의 프리퍼런스에 따라 앱을 커스터마이징 할 수 있도록 해준다.
+안드로이드의 SharedPreference, Unity의 PlayerPrefs 등과 같은 개념이다.
+UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정보를 캐싱한다.
+사용법  기본 객체 가져오기  UserDefaults.standard 데이터 저장하기  UserDefaults.standard.set(Any?, forKey: String) UserDefaults.standard.set(Float, forKey: String) UserDefaults.standard.set(Double, forKey: String) UserDefaults.standard.set(URL?, forKey: String) // and more  기본적으로 float, double, integer, Boolean, URL 타입을 지원하며,</description>
+    </item>
+    
+  </channel>
+</rss>

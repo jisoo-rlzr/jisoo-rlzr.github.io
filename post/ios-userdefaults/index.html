@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        
+        Jisoo&#39;s Dev Log
+        
+    </title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href="https://jisoo-rlzr.github.io/images/logo.png" />
+    <link rel="apple-touch-icon" href="https://jisoo-rlzr.github.io/images/logo.png"><link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/style.css">
+    
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/monokai-sublime.min.css">
+    <script src="https://jisoo-rlzr.github.io/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/highlight.css">
+    
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/custom.css">
+    
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'G-6Y6Y346VHW', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    
+    <meta name="generator" content="Hugo 0.62.2" /></head>
+
+
+<body>
+<div class="header">
+    <div class="site-logo__wrap">
+        <div id="site-button">
+            <div></div>
+        </div>
+        
+        <div class=' site-logo '>
+            <a href="https://jisoo-rlzr.github.io/"><img src="https://jisoo-rlzr.github.io/images/logo.png" /></a>
+        </div>
+    </div>
+    
+<div class=' site-nav u-font ' id="nav-bar">
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/" >Home</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/post" >Blog</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/about" >About</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/tags/" >Tags</a>
+    </div>
+    
+</div>
+
+</div>
+<div class="main">
+
+<div class="main-content">
+    <div class="main-content__date">
+        <h4 id="date"> 2020.02.17 16:23 </h4>
+    </div>
+    <div class="main-content__title">
+        <h1 id="title">iOS UserDefaults를 이용한 Preference 데이터 저장</h1>
+    </div>
+    <div class="main-content__article">
+        <article id="content">
+            <p>    </p>
+<h1 id="userdefaults-클래스는">UserDefaults 클래스는</h1>
+<p><strong>Key-Value</strong> 데이터로 사용자 설정 데이터를 저장하는 <strong>defaults</strong> 데이터베이스와 인터랙팅하는 인터페이스다.<br>
+defaults 시스템은 사용자의 프리퍼런스에 따라 앱을 커스터마이징 할 수 있도록 해준다.<br>
+안드로이드의 SharedPreference, Unity의 PlayerPrefs 등과 같은 개념이다.<br>
+UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정보를 캐싱한다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted -->   </p>
+<h1 id="사용법">사용법</h1>
+<ol>
+<li><strong>기본 객체 가져오기</strong></li>
+</ol>
+<pre><code>UserDefaults.standard
+</code></pre><ol start="2">
+<li><strong>데이터 저장하기</strong></li>
+</ol>
+<pre><code>UserDefaults.standard.set(Any?, forKey: String)
+UserDefaults.standard.set(Float, forKey: String)
+UserDefaults.standard.set(Double, forKey: String)
+UserDefaults.standard.set(URL?, forKey: String)
+// and more
+</code></pre><p>    기본적으로 <code>float, double, integer, Boolean, URL</code> 타입을 지원하며,<br>
+    반드시 <code>NSData, NSString, NSNumber, NSDate, NSArray, NSDictionary</code> 인스턴스여야 한다.</p>
+<ol start="3">
+<li><strong>데이터 읽기</strong></li>
+</ol>
+<pre><code>UserDefaults.standard.object(forKey: String)
+UserDefaults.standard.url(forKey: String)
+UserDefaults.standard.array(forKey: String)
+UserDefaults.standard.dictionary(forKey: String)
+UserDefaults.standard.string(forKey: String)
+// and more
+</code></pre><p> 
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="참고사항">참고사항</h1>
+<p>a. <strong>파일 경로</strong>를 저장할 땐 사용자가 파일을 옮길 경우를 대비하여<br>
+    <code>bookmarkData(options:includingResourceValuesForKeys:relativeTo:)</code>를 사용해 생성한<br>
+    NSURL 북마크 데이터를 대신 저장하고,<br>
+    <code>URLByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:</code>를 사용해<br>
+    저장된 북마크 데이터를 사용할 수 있다.<br>
+b. <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i">특정 default 값</a>이나 <a href="https://developer.apple.com/documentation/foundation/userdefaults/1408206-didchangenotification">default 데이터베이스의 모든 업데이트</a>에 대한 변경에 대해 <strong>observing</strong> 할 수 있다.<br>
+c. UserDefaults 클래스는 <strong>thread-safe</strong> 하다.
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted -->   </p>
+<h1 id="references">References</h1>
+<p><a href="https://developer.apple.com/documentation/foundation/userdefaults">공식 문서</a>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+ </p>
+
+        </article>
+    </div>
+    <div class="main-content__tags u-font">
+        
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/ios">iOS</a></span>
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/userdefaults">UserDefaults</a></span>
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/database">Database</a></span>
+        
+        
+    </div>
+</div>
+<div class="main-profile">
+    
+    <div class="main-profile__body">
+        <div class="main-profile__author">
+            
+            <span> Jisoo </span>
+            
+        </div>
+        <div class="main-profile__email main-profile__description">
+            
+            <p> contact@jisoo.codes </p>
+            
+        </div>
+        <div class="main-profile__description">
+            
+            <p> Mobile &amp; Web Developer, a Realizer </p>
+            
+        </div>
+    </div>
+    <div class="main-profile__avatar">
+        
+            <img src="https://jisoo-rlzr.github.io/images/logo.png">
+        
+    </div>
+</div>
+<div class="main-line"></div>
+<div class="main-pn">
+    
+    <a class="previous" href="https://jisoo-rlzr.github.io/post/adb-setting/">
+        <div class="pn-dec"></div>
+        <div class="pn-els">
+            <div class="pn-el__1"> 2020.02.11 12:31 </div>
+            <div class="pn-el__2"> MacOS에서 adb(Android Debug Bridge) 사용 설정하기 </div>
+        </div>
+    </a>
+    
+    
+    <a class="next" href="https://jisoo-rlzr.github.io/post/ios-request-review/">
+        <div class="pn-dec"></div>
+        <div class="pn-els">
+            <div class="pn-el__1"> 2020.02.28 11:24 </div>
+            <div class="pn-el__2"> iOS에서 StoreKit 이용해 리뷰 요청하기 </div>
+        </div>
+    </a>
+    
+</div>
+
+</div>
+<div class="footer">
+    <div class="copyright-wrap">
+        <p class="copyright u-font">
+            2020 Jisoo Kim. All rights reserved.
+        </p>
+    </div>
+</div>
+</body>
+<script src="https://jisoo-rlzr.github.io/js/page.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+

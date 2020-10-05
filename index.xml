@@ -1,23 +1,92 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech Blog</title>
-    <link>https://okthisisgood.github.io/</link>
-    <description>Recent content on Tech Blog</description>
+    <title>Jisoo&#39;s Dev Log</title>
+    <link>https://jisoo-rlzr.github.io/</link>
+    <description>Recent content on Jisoo&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2020 Jisoo Kim. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 12:31:43 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 01:27:29 +0900</lastBuildDate>
     
-	<atom:link href="https://okthisisgood.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jisoo-rlzr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>About</title>
+      <link>https://jisoo-rlzr.github.io/about/</link>
+      <pubDate>Fri, 08 May 2020 01:27:29 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/about/</guid>
+      <description>Hi, I&#39;m Jisoo Kim.
+I’m currently a frontend mobile &amp;amp; web developer based in Seoul, Korea. I enjoy learning and improving skills to make interesting and valuable services.
+My main skillset is
+ Android &amp;amp; Kotlin Unity 3D &amp;amp; AR Foundation Firebase HTML, CSS, JavaScript  And currently studying &amp;amp; working on projects with
+ IOS &amp;amp; Swift TypeScript Vue.js  I also have done some projects with
+ React.js Node.</description>
+    </item>
+    
+    <item>
+      <title>Create React App 프로젝트 Heroku에 배포하기</title>
+      <link>https://jisoo-rlzr.github.io/post/react-heroku/</link>
+      <pubDate>Fri, 08 May 2020 00:32:16 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/post/react-heroku/</guid>
+      <description>원격으로 협업을 하다보니 개발 중인 프로젝트를 팀원도 볼 수 있게 배포하고 싶었다.
+지금까지 AWS나 Firebase, Netlify로도 배포를 해봤는데, Heroku도 간편하다고 많이 들어서 개발 중 확인하는 용으로 Personal 무료 플랜으로 배포했다.
+역시 순탄한 길은 없다고..
+Netlify는 GitHub으로 관리하던 개인 프로젝트라 정말 간편하게 배포했는데 이번엔 에러때문에 서칭을 열심히 해야했다.
+0. 개발 중이던 환경  Create react app으로 생성한 프로젝트 git과 연동, bitbucket remote에 연결되어 있음 yarn 사용
+  1. Heroku 가입 및 Heroku CLI 다운로드 우선 운영체제에 맞는 Heroku CLI를 다운로드 받는다.</description>
+    </item>
+    
+    <item>
+      <title>1일 1개선 개인정보처리방침</title>
+      <link>https://jisoo-rlzr.github.io/privacy/onechangeaday/</link>
+      <pubDate>Mon, 30 Mar 2020 17:00:24 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/privacy/onechangeaday/</guid>
+      <description>개인정보의 처리 목적  &amp;lt;수코드&amp;gt;(‘https://jisoo.codes/’이하 ‘1일 1개선’) 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
+ 로그인을 통한 고객 별 데이터 동기화
+  개인정보의 처리 및 보유 기간  ① &amp;lt;수코드&amp;gt;(‘https://jisoo.codes/’이하 ‘1일 1개선’) 은(는) 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유․이용기간 또는 법령에 따른 개인정보 보유․이용기간 내에서 개인정보를 처리․보유합니다.
+② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.
+ 개선사항 데이터 : 마지막 신규 저장 후 5년 또는 별도 공지 시까지</description>
+    </item>
+    
+    <item>
+      <title>iOS에서 StoreKit 이용해 리뷰 요청하기</title>
+      <link>https://jisoo-rlzr.github.io/post/ios-request-review/</link>
+      <pubDate>Fri, 28 Feb 2020 11:24:50 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/post/ios-request-review/</guid>
+      <description>사용자들은 불만이 있지 않으면 리뷰를 잘 남기지 않는 경향이 있다.
+그래서 앱 내에서 적절한 때에 리뷰를 요청할 필요가 있다.
+iOS에서는 사용자가 앱에 대한 만족감이 높을 때 앱의 사용을 방해하지 않는 선에서 평가와 리뷰를 요청하도록 가이드 한다.
+SKStoreReviewController API(iOS 10.3+)를 사용하면 사용자는 앱을 종료하지 않고 표준 프롬프트를 통해 평가를 제출할 수 있다.
+유의할 것은, 프롬프트가 1년에 최대 3번까지만 표시된다.
+그러므로 다음 권고사항을 지켜서 최적의 시점에 요청하도록 해야겠다.
+ 같은 버전의 앱에 대한 리뷰를 요청하지 않도록 번들 버전을 확인한다.</description>
+    </item>
+    
+    <item>
+      <title>iOS UserDefaults를 이용한 Preference 데이터 저장</title>
+      <link>https://jisoo-rlzr.github.io/post/ios-userdefaults/</link>
+      <pubDate>Mon, 17 Feb 2020 16:23:35 +0900</pubDate>
+      
+      <guid>https://jisoo-rlzr.github.io/post/ios-userdefaults/</guid>
+      <description>UserDefaults 클래스는 Key-Value 데이터로 사용자 설정 데이터를 저장하는 defaults 데이터베이스와 인터랙팅하는 인터페이스다.
+defaults 시스템은 사용자의 프리퍼런스에 따라 앱을 커스터마이징 할 수 있도록 해준다.
+안드로이드의 SharedPreference, Unity의 PlayerPrefs 등과 같은 개념이다.
+UserDefaults는 항상 데이터베이스를 참조할 필요가 없도록 정보를 캐싱한다.
+사용법  기본 객체 가져오기  UserDefaults.standard 데이터 저장하기  UserDefaults.standard.set(Any?, forKey: String) UserDefaults.standard.set(Float, forKey: String) UserDefaults.standard.set(Double, forKey: String) UserDefaults.standard.set(URL?, forKey: String) // and more  기본적으로 float, double, integer, Boolean, URL 타입을 지원하며,</description>
+    </item>
+    
+    <item>
       <title>MacOS에서 adb(Android Debug Bridge) 사용 설정하기</title>
-      <link>https://okthisisgood.github.io/post/adb-setting/</link>
+      <link>https://jisoo-rlzr.github.io/post/adb-setting/</link>
       <pubDate>Tue, 11 Feb 2020 12:31:43 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/adb-setting/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/adb-setting/</guid>
       <description>안드로이드 개발을 한다면 필수적으로 사용하는 adb를 사용 설정하는 법을 정리하겠다.
 0. 사전 준비 Android Studio 설치 및 환경 설정이 완료된 상태로 가정한다.
 1. adb 설치하기 adb는 Android SDK Manager Platform-Tools 패키지에 포함되어 있다.
@@ -28,10 +97,10 @@
     
     <item>
       <title>GitHub 휴고 블로그에 새 글 배포하기</title>
-      <link>https://okthisisgood.github.io/post/hugo-posting/</link>
+      <link>https://jisoo-rlzr.github.io/post/hugo-posting/</link>
       <pubDate>Mon, 10 Feb 2020 23:49:01 +0900</pubDate>
       
-      <guid>https://okthisisgood.github.io/post/hugo-posting/</guid>
+      <guid>https://jisoo-rlzr.github.io/post/hugo-posting/</guid>
       <description>업로드 할 때마다 찾아보지 않도록 휴고 블로그에 새로운 포스트를 업로드 하는 과정을 정리해 보겠다.
 1. 새 포스트 생성하기 포스트는 주로 content/post 디렉토리에 있다.
 프로젝트 루트에서 다음 명령어를 실행하면 새로운 md 파일이 생성된다.
@@ -39,36 +108,6 @@ $ hugo new post/new-post-title.md 생성된 파일에는 Date가 자동으로 �
 draft: true 라는 라인이 포함되어 있다. 이는 작성 중이라는 뜻으로, 빌드에 포함되지 않는다.
 작성이 완료되면 값을 false로 바꿔 빌드에 포함될 수 있도록 한다.
 2. 로컬 서버에서 확인하기 새 포스트를 배포하기 전에 로컬 서버를 돌려 확인할 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>2019년에 대한 회고</title>
-      <link>https://okthisisgood.github.io/post/wrap-up-2019/</link>
-      <pubDate>Sun, 19 Jan 2020 23:55:48 +0900</pubDate>
-      
-      <guid>https://okthisisgood.github.io/post/wrap-up-2019/</guid>
-      <description>생각만 하던 기술 블로그를 드디어 시작하게 되었다.
-첫 포스트는 모처럼 연초에 블로그를 시작한 김에 2019년에 대한 회고를 해보기로 한다.
-우선 1월에 하나, 9월과 12월에 하나씩 총 세 번 앱을 출시했다.
-1월 출시한 앱은 내렸고 이후 출시한 앱들 HeyZoo 시리즈는 관리 중이다.
-GooglePlay와 AppStore에 모두 출시했다.
-우선 Output이 있었던 점은 만족하지만 마케팅과 정확한 고객 타게팅과 가치 설정에 있어서는 미흡했다.
-각 앱에 대한 부가 설명은 아래에 적었다.  꼭꼭 숨어라
-꼭꼭 숨어라는 처음부터 끝까지 내 손으로 만들어 출시한 첫 앱이다.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://okthisisgood.github.io/about/</link>
-      <pubDate>Sun, 19 Jan 2020 20:33:29 +0900</pubDate>
-      
-      <guid>https://okthisisgood.github.io/about/</guid>
-      <description>Hi, I&#39;m Jisoo Kim.
-I’m currently a frontend mobile &amp;amp; web developer based in Seoul, Korea. I enjoy learning and improving skills to make interesting and valuable services.
-My main skillset is
- Android &amp;amp; Kotlin Unity 3D &amp;amp; AR Foundation Firebase HTML, CSS, JavaScript  And currently studying &amp;amp; working on projects with
- IOS &amp;amp; Swift Vue.js  I also have done personal projects with
- Node.js GraphQL &amp;amp; Prisma AWS Lambda &amp;amp; Fargate deployment Bootstrap  You can also check my company here.</description>
     </item>
     
   </channel>

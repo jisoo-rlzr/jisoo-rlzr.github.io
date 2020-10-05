@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        
+        Jisoo&#39;s Dev Log
+        
+    </title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' type='image/x-icon' href="https://jisoo-rlzr.github.io/images/logo.png" />
+    <link rel="apple-touch-icon" href="https://jisoo-rlzr.github.io/images/logo.png"><link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/style.css">
+    
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/monokai-sublime.min.css">
+    <script src="https://jisoo-rlzr.github.io/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/highlight.css">
+    
+    <link rel="stylesheet" href="https://jisoo-rlzr.github.io/scss/custom.css">
+    
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'G-6Y6Y346VHW', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    
+    <meta name="generator" content="Hugo 0.62.2" /></head>
+
+
+<body>
+<div class="header">
+    <div class="site-logo__wrap">
+        <div id="site-button">
+            <div></div>
+        </div>
+        
+        <div class=' site-logo '>
+            <a href="https://jisoo-rlzr.github.io/"><img src="https://jisoo-rlzr.github.io/images/logo.png" /></a>
+        </div>
+    </div>
+    
+<div class=' site-nav u-font ' id="nav-bar">
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/" >Home</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/post" >Blog</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/about" >About</a>
+    </div>
+    
+    <div class="site-nav__wrap">
+        <a class="site-nav__el" href="/tags/" >Tags</a>
+    </div>
+    
+</div>
+
+</div>
+<div class="main">
+
+<div class="main-content">
+    <div class="main-content__date">
+        <h4 id="date"> 2020.05.08 00:32 </h4>
+    </div>
+    <div class="main-content__title">
+        <h1 id="title">Create React App 프로젝트 Heroku에 배포하기</h1>
+    </div>
+    <div class="main-content__article">
+        <article id="content">
+            <p>원격으로 협업을 하다보니 개발 중인 프로젝트를 팀원도 볼 수 있게 배포하고 싶었다.<br>
+지금까지 AWS나 Firebase, Netlify로도 배포를 해봤는데,
+Heroku도 간편하다고 많이 들어서 개발 중 확인하는 용으로 Personal 무료 플랜으로 배포했다.</p>
+<p>역시 순탄한 길은 없다고..<br>
+Netlify는 GitHub으로 관리하던 개인 프로젝트라 정말 간편하게 배포했는데 이번엔 에러때문에 서칭을 열심히 해야했다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="0-개발-중이던-환경">0. 개발 중이던 환경</h1>
+<ul>
+<li>Create react app으로 생성한 프로젝트</li>
+<li>git과 연동, bitbucket remote에 연결되어 있음</li>
+<li>yarn 사용<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></li>
+</ul>
+<h1 id="1-heroku-가입-및-heroku-cli-다운로드">1. Heroku 가입 및 Heroku CLI 다운로드</h1>
+<p>우선 운영체제에 맞는 Heroku CLI를 다운로드 받는다.<br>
+나는 MacOS라 brew를 이용해 설치했다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="2-heroku에-새로운-앱-생성">2. Heroku에 새로운 앱 생성</h1>
+<p>나는 Heroku web에서 생성했는데, 터미널에서 <code>heroku create {app name}</code> 으로도 가능하다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="3-개발-중인-프로젝트-remote에-heroku-추가">3. 개발 중인 프로젝트 remote에 heroku 추가</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ project_root&gt; heroku  git:remote -a <span style="color:#f92672">{</span>app name<span style="color:#f92672">}</span>
+</code></pre></div><p>heroku에 생성해둔 앱 이름으로 heroku remote를 추가한다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="4--serve-패키지-추가-및-packagejson-script-수정-h10-에러">4. [!] serve 패키지 추가 및 package.json script 수정 (H10 에러)</h1>
+<p>3번 이후 바로 heroku remote에 push했더니 앱이 열리지가 않았고,<br>
+내 앱에 문제가 있으니 <code>heroku logs --tail</code>을 통해 로그를 확인하라고 한다.<br>
+확인하니 마지막에 다음과 같은 로그가 있었다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">heroku<span style="color:#f92672">[</span>router<span style="color:#f92672">]</span>: at<span style="color:#f92672">=</span>error code<span style="color:#f92672">=</span>H10 desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;App crashed&#34;</span> method<span style="color:#f92672">=</span>GET path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> host<span style="color:#f92672">=</span><span style="color:#f92672">{</span>app name<span style="color:#f92672">}</span>.herokuapp.com
+</code></pre></div><p>찾아보니 Heroku는 start 스크립트를 쓴다고 한다.<br>
+그런데 현재 프로젝트에서 start는 로컬 테스트 빌드 스크립트로 되어있기 때문에 에러가 난 것 같다.<br>
+따라서 이를 다음과 같이 수정한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#34;dev&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react-scripts start&#34;</span>,
+<span style="color:#e6db74">&#34;start&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;serve -s build&#34;</span>,
+<span style="color:#e6db74">&#34;build&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react-scripts build&#34;</span>,
+<span style="color:#e6db74">&#34;test&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react-scripts test&#34;</span>,
+<span style="color:#e6db74">&#34;eject&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;react-scripts eject&#34;</span>,
+<span style="color:#e6db74">&#34;heroku-postbuild&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yarn build&#34;</span>
+</code></pre></div><p>기존의 start 스크립트를 dev로 새로 추가하고,<br>
+heroku-postbuild를 통해 프로덕션 빌드를 하도록 추가,<br>
+마지막으로 start 스크립트를 serve -s build로 바꾼다.</p>
+<p>또한 serve 패키지를 추가해야 하는데,<br>
+yarn build 시 나오는대로 <code>yarn global add serve</code>를 하게되면, heroku에서 serve 패키지를 찾지 못한다.<br>
+따라서 <code>yarn add serve</code>를 다시 해서 package.json에 serve가 추가된 것까지 확인하고 커밋 한다.<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<h1 id="5-heroku-remote에-push하여-배포">5. Heroku remote에 push하여 배포</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ project_root&gt; git push heroku master
+</code></pre></div><p>이제 푸시하면, 정상적으로 배포가 된다.👏👏👏👏<br>
+주소로 들어가거나 heroku 웹의 open app을 통해서, 또는 <code>heroku open</code>을 통해 바로 접속 할 수 있다.</p>
+<!-- raw HTML omitted -->
+
+        </article>
+    </div>
+    <div class="main-content__tags u-font">
+        
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/react">React</a></span>
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/deploy">Deploy</a></span>
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/heroku">Heroku</a></span>
+        
+        <span><a href="https://jisoo-rlzr.github.io/tags/create-react-app">Create React App</a></span>
+        
+        
+    </div>
+</div>
+<div class="main-profile">
+    
+    <div class="main-profile__body">
+        <div class="main-profile__author">
+            
+            <span> Jisoo </span>
+            
+        </div>
+        <div class="main-profile__email main-profile__description">
+            
+            <p> contact@jisoo.codes </p>
+            
+        </div>
+        <div class="main-profile__description">
+            
+            <p> Mobile &amp; Web Developer, a Realizer </p>
+            
+        </div>
+    </div>
+    <div class="main-profile__avatar">
+        
+            <img src="https://jisoo-rlzr.github.io/images/logo.png">
+        
+    </div>
+</div>
+<div class="main-line"></div>
+<div class="main-pn">
+    
+    <a class="previous" href="https://jisoo-rlzr.github.io/post/ios-request-review/">
+        <div class="pn-dec"></div>
+        <div class="pn-els">
+            <div class="pn-el__1"> 2020.02.28 11:24 </div>
+            <div class="pn-el__2"> iOS에서 StoreKit 이용해 리뷰 요청하기 </div>
+        </div>
+    </a>
+    
+    
+</div>
+
+</div>
+<div class="footer">
+    <div class="copyright-wrap">
+        <p class="copyright u-font">
+            2020 Jisoo Kim. All rights reserved.
+        </p>
+    </div>
+</div>
+</body>
+<script src="https://jisoo-rlzr.github.io/js/page.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
